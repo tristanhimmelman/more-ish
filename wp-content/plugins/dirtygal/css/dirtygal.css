@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+	
+.dirtygal_images_container {
+}
+.dirtygal_image_container, #dirtygal_drag_placeholder {
+	padding:5px;
+	margin:0px;
+	width:270px;
+	height:100px;
+}
+.dirtygal_image_container:hover {
+	background-color:#AFC6EF;
+}
+.dirtygal_image_container.selected{
+	background-color:#09C;
+}
+
+.dirtygal_image_clear {
+	clear:left;
+}
+.dirtygal_image_container > .dirtygal_thumb {
+	width:100px;
+	height:100px;
+	position:absolute;
+	cursor:move;
+	z-index:10;
+}
+.dirtygal_image_container .dirtygal_coverstar {
+	position:absolute;
+	z-index:11;
+	cursor:pointer;
+	margin:5px;
+	height:20px;
+	width:20px;
+}
+.dirtygal_image_container > .dirtygal_image_options {
+	position:absolute;
+	width:150px;
+	margin-left:105px;
+}
+
+.dirtygal_image_options > textarea {
+	height:75px;
+	width:163px;
+	margin-bottom:5px;
+}
+.dirtygal_image_options > a {
+	cursor: pointer;
+	color:#930;
+}
+.dirtygal_dropzone {
+	clear:both;
+	height:1px;
+	margin-top:5px;
+	margin-bottom:5px;	
+}
+#dirtygal_fullsize_holder{
+	margin-top:10px;
+}
+#dirtygal_crop_button{
+	cursor:pointer;
+}
+#dirtygal_crop_button.disabled, #dirtygal_fit_button.disabled {
+	color:#666;
+	background-color:#999;
+	cursor:default;
+}
+#dirtygal_fit_button.activated {
+	color:#FFF;
+	background-color:#06A;
+}
+#dirtygal_drag_placeholder{
+	background-color:#CCC;
+}
